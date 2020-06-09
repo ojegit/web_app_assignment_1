@@ -3,7 +3,7 @@ import "./styles.css";
 const playerMarkers = ["x", "o"];
 const noPlayers = playerMarkers.length;
 var board; //board  this is going to be 2D
-var N; //table size
+var N = 5; //board size
 var turn = 1; //player's turn
 
 //initialization
@@ -20,15 +20,9 @@ if (document.readyState !== "loading") {
 }
 
 function initializeCode() {
-  console.log("Initializing");
-  const button = document.getElementById("generateTable");
-  button.addEventListener("mousedown", event => {
-    board = [];
-    N = document.getElementById("tableDim").value;
-    addTable(N);
-    initialize2DArray(board, N, N);
-    event.stopPropagation();
-  });
+  board = [];
+  addTable(N);
+  initialize2DArray(board, N, N);
 
   //Generate [N x N] table
   function addTable(N) {
