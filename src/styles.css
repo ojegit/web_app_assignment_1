@@ -1,0 +1,55 @@
+/*.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+*/
+
+body {
+  font-family: sans-serif;
+}
+
+div {
+  font-size: 18px;
+  line-height: 1.3em;
+  vertical-align: top;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-sizing: border-box;
+  width: 48%;
+  background: lightgreen;
+  border: solid green 1px;
+}
+
+.floatright {
+  float: right;
+}
+
+strong {
+  font-family: "Chilanka", cursive;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.floatydiv {
+  display: inline-block;
+}
+
+.reddiv {
+  border: solid red 1px;
+  background: salmon;
+}
+
+.halfsize {
+  size: 49%;
+}
